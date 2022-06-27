@@ -1,0 +1,23 @@
+//installation
+npm init
+npm install npx
+npm install cypress --save-dev 
+npx cypress open
+
+//time our error
+
+node_modules  =>  cypress  =>  lib   =>  tasks  =>  verify.js  => line_no 40 => replace 30000 to 100000
+
+
+
+
+
+//First delete your node_modules folder and run below command sequentially
+
+npm cache clean --force
+npm cache verify
+npm install --force
+npm audit fix --force
+npm install cypress
+npm install npx
+npx cypress open
